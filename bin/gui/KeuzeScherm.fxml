@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #151928;" type="StackPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="200.0" StackPane.alignment="CENTER">
+         <children>
+            <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #151928;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Rummikub" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Courgette Regular" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #151928;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="%welkom" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Courgette Regular" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Bloom threshold="0.1" />
+                     </effect>
+                  </Label>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="57.0" prefWidth="630.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="lblSpeler1" text="Speler1" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lblSpeler2" layoutX="30.0" layoutY="10.0" text="Speler2" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lblSpeler3" layoutX="30.0" layoutY="10.0" text="Speler3" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="lblSpeler4" layoutX="30.0" layoutY="10.0" text="Speler4" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="72.0" prefWidth="600.0" spacing="15.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="btnSpeelSpel" mnemonicParsing="false" onMouseClicked="#btnSpeelSpelClicked" prefHeight="65.0" prefWidth="174.0" style="-fx-background-radius: 5;" text="%speelSpel" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnOverzicht" layoutX="223.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#btnOverzichtClicked" prefHeight="65.0" prefWidth="174.0" style="-fx-background-radius: 5;" text="%overzicht" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: #151928;" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</fx:root>

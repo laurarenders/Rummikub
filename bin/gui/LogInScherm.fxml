@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" type="StackPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #151928;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #151928;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Rummikub" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Courgette Regular" size="36.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="%inloggegevensGeven" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txfUserName" alignment="CENTER" promptText="%gebruikersnaam" VBox.vgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="150.0" right="150.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="WHITE" height="32.92" radius="16.555" width="35.3" />
+                     </effect>
+                  </TextField>
+                  <PasswordField fx:id="pwdPasswoord" alignment="CENTER" promptText="%wachtwoord" VBox.vgrow="ALWAYS">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="150.0" right="150.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow color="WHITE" height="28.15" radius="17.15" width="42.45" />
+                     </effect>
+                  </PasswordField>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btnLogIn" mnemonicParsing="false" onAction="#btnLoginAfhandeling" prefHeight="26.0" prefWidth="100.0" text="%aanmelden" HBox.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow color="WHITE" height="46.02" radius="24.0" width="51.98" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets right="50.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnDoorgaan" mnemonicParsing="false" onMouseClicked="#btnDoorgaanClicked" prefHeight="26.0" prefWidth="100.0" text="%volgende" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow color="WHITE" height="40.07" radius="20.130000000000003" width="42.45" />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblMessage" alignment="CENTER" prefHeight="48.0" prefWidth="418.0" textAlignment="RIGHT" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</fx:root>
