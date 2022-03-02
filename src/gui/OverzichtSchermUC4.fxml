@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #151928;" type="StackPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="800.0" StackPane.alignment="CENTER">
+         <children>
+          <AnchorPane prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: #151928;" HBox.hgrow="ALWAYS" />
+		</children>
+       </HBox>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="800.0">
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="lblSpeler1Som" fx:id="lblSpeler1Som" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: white;" text="SomScore" textAlignment="CENTER" visible="false" AnchorPane.bottomAnchor="446.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="115.0">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" /> 
+                     </padding>
+                  </Label>
+                  <Label id="lblSpeler2Som" fx:id="lblSpeler2Som" layoutX="39.0" layoutY="194.0" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: white;" text="SomScore" textAlignment="CENTER" visible="false" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="194.0">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label id="lblSpeler3Som" fx:id="lblSpeler3Som" layoutX="39.0" layoutY="270.0" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: white;" text="SomScore" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label id="lblSpeler3Som" fx:id="lblSpeler4Som" layoutX="39.0" layoutY="347.0" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: white;" text="SomScore" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </right>
+         <bottom>
+            <Button fx:id="btnMenu" mnemonicParsing="false" onMouseClicked="#btnMenuClicked" text="%menu" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+         <top>
+            <Label text="%overzicht" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Courgette Regular" size="36.0" />
+               </font>
+               <effect>
+                  <Bloom threshold="0.1" />
+               </effect>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+             <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="505.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblSpeler1" alignment="CENTER" prefHeight="45.0" prefWidth="500.0" style="-fx-background-color: white;" text="Laura: score xx" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblSpeler2" alignment="CENTER" prefHeight="45.0" prefWidth="500.0" style="-fx-background-color: white;" text="Florian: score xx" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblSpeler3" alignment="CENTER" prefHeight="45.0" prefWidth="500.0" style="-fx-background-color: white;" text="Benjamin: score xx" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lblSpeler4" alignment="CENTER" prefHeight="45.0" prefWidth="500.0" style="-fx-background-color: white;" text="Elly: score xx" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                   <HBox alignment="TOP_CENTER" prefHeight="194.0" prefWidth="800.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="120.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</fx:root>
